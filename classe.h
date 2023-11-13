@@ -3,14 +3,16 @@ class pointage
 {
 private:
 	int result;
-	int x;
-	int y;
-	int point1[2];
-	int point2[2];
+
+	int x1;
+	int y1;
+	int x2;
+	int y2;
 	
 public:
-	void point();
-	void point(int, int);
-	int distance_point(int point1[2],int point2[2]);
+	void set_pointA(int x,int y);
+	void set_pointB(int x,int y);
+	int distance_point();
+	bool verif();
 };
 

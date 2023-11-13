@@ -2,22 +2,27 @@
 #include <cmath>
 
 
-void pointage::point()
-{
-	point1[0] = 0;
-	point1[1] = 0;
-	void tableaux 
+
+void pointage::set_pointA(int x, int y) {
+	this -> x1 = x;
+	this -> y1 = y;
 }
 
-void pointage::point(int x, int y)
-{
-	point1[0] = x;
-	point1[1] = y;
+void pointage::set_pointB(int x, int y) {
+	this -> x2 = x;
+	this -> y2 = y;
 }
 
-int pointage::distance_point(int tab1[2], int tab2[2]) {
-	int x = (tab1[0] - tab2[0]);
-	int y = (tab1[1] - tab2[1]);
-	result = sqrt(pow(x, 2) + (pow(y, 2)));
+bool pointage::verif() {
+	if (this -> result != 1) {
+		return (false);
+	}
+	else {
+		return(true);
+	}
+}
+
+int pointage::distance_point() {
+	this -> result = sqrt(pow((this-> x1 - this -> x2), 2) + (pow((this-> y1 - this-> y2), 2)));
 	return(result);
 };
