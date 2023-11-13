@@ -140,6 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="POO - Prosit 1.cpp" />
+    <ClCompile Include="classe.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="classe.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
